@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+  
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+    <base target="_top">
+  </head>
+  <body>
+    <div id="main" class="uk-position-top-center uk-margin-medium-top" style="text-align: center;">
+      <h1 id="header">Input Text Here</h1>
+      <span></span>
+      <center>
+        <textarea id="text" class="uk-textarea" style="box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);" cols="50" rows="10"></textarea>
+      </center>
+      <button id="encrypt" type="button" class="uk-input uk-button uk-button-default uk-margin-top">Encrypt</button>
+      <button id="decrypt" type="button" class="uk-input uk-button uk-button-default uk-margin-top">Decrypt</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $("#encrypt").click(function(){
+      const str = $("textarea").val();
+      const res = str.replace(/a/gi, "r1");
+      const res0 = res.replace(/b/gi, "t11");
+      const res1 = res0.replace(/c/gi, "y111");
+      const res2 = res1.replace(/d/gi, "r2");
+      const res3 = res2.replace(/e/gi, "t22");
+      const res4 = res3.replace(/f/gi, "y222");
+      const res5 = res4.replace(/g/gi, "r3");
+      const res6 = res5.replace(/h/gi, "t33");
+      const res7 = res6.replace(/i/gi, "y333");
+      const res8 = res7.replace(/j/gi, "r4");
+      const res9 = res8.replace(/k/gi, "t44");
+      const res10 = res9.replace(/l/gi, "y444");
+      const res11 = res10.replace(/m/gi, "r5");
+      const res12 = res11.replace(/n/gi, "t55");
+      const res13 = res12.replace(/o/gi, "y555");
+      const res14 = res13.replace(/p/gi, "r6");
+      const res15 = res14.replace(/q/gi, "t66");
+      const res16 = res15.replace(/r/gi, "y666");
+      const res17 = res16.replace(/s/gi, "r7");
+      const res18 = res17.replace(/t/gi, "t77");
+      const res19 = res18.replace(/u/gi, "y777");
+      const res20 = res19.replace(/v/gi, "r8");
+      const res21 = res20.replace(/w/gi, "t88");
+      const res22 = res21.replace(/x/gi, "y888");
+      const res23 = res22.replace(/y/gi, "r9");
+      const res24 = res23.replace(/z/gi, "t99");
+      const res25 = res24.replace(/ /gi, "-");
+      $("textarea").val(res25);
+    });
+    $("#decrypt").click(function(){
+      const str = $("textarea").val();
+      const res = str.replace(/r1/gi, "a");
+      const res0 = res.replace(/t11/gi, "b");
+      const res1 = res0.replace(/y111/gi, "c");
+      const res2 = res1.replace(/r2/gi, "d");
+      const res3 = res2.replace(/t22/gi, "e");
+      const res4 = res3.replace(/y222/gi, "f");
+      const res5 = res4.replace(/r3/gi, "g");
+      const res6 = res5.replace(/t33/gi, "h");
+      const res7 = res6.replace(/y333/gi, "i");
+      const res8 = res7.replace(/r4/gi, "j");
+      const res9 = res8.replace(/t44/gi, "k");
+      const res10 = res9.replace(/y444/gi, "l");
+      const res11 = res10.replace(/r5/gi, "m");
+      const res12 = res11.replace(/t55/gi, "n");
+      const res13 = res12.replace(/y555/gi, "o");
+      const res14 = res13.replace(/r6/gi, "p");
+      const res15 = res14.replace(/t66/gi, "q");
+      const res16 = res15.replace(/y666/gi, "r");
+      const res17 = res16.replace(/r7/gi, "s");
+      const res18 = res17.replace(/t77/gi, "t");
+      const res19 = res18.replace(/y777/gi, "u");
+      const res20 = res19.replace(/r8/gi, "v");
+      const res21 = res20.replace(/t88/gi, "w");
+      const res22 = res21.replace(/y888/gi, "x");
+      const res23 = res22.replace(/r9/gi, "y");
+      const res24 = res23.replace(/t99/gi, "z");
+      const res25 = res24.replace(/-/gi, " ");
+      $("textarea").val(res25);
+      $("#decrypt").click();
+      $("#decrypt").click();
+      $("#decrypt").click();
+      $("#decrypt").click();
+      $("#decrypt").click();
+      $("#decrypt").click();
+    });
+    $('body').keyup(function(e){
+       if(e.keyCode == 32){
+         var textarea = $("textarea").val();
+         if(textarea.substring(0, textarea.lastIndexOf(' ')) == /a/gi){
+           
+         }
+       }
+   });
+    </script>
+  </body>
+</html>
